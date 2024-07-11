@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+
+/* || VARIABLES */
+
+*:root {
+  /* COLOR */
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Lightpink: hsl(275, 100%, 97%);
+  --Grayishpurple: hsl(292, 16%, 49%);
+  --Darkpurple: hsl(292, 42%, 14%);
+  --purple: hsl(292, 78%, 44%);
+
+  /* FONTS */
+  --FF: "Work Sans";
+  --FS: 16px;
+  --FW1: 400;
+  --FW2: 600;
+  --FW3: 700;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  display: block;
+}
+
+body {
+  font-family: var(--FF);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--Lightpink);
+  min-height: 100vh;
+}
+
+.bgPattern {
+  width: 100%;
+}
+
+.bgPattern img {
+  width: 100%;
+}
+
+main {
+  font-family: var(--FF);
+  width: 100;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: var(--White);
+  border-radius: 13px;
+  margin: 1.5rem;
+  position: fixed;
+  top: 6rem;
+  padding: 2rem;
+  gap: 1rem;
+  text-align: left;
+  max-width: 600px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: var(--FW3);
+  gap: 1rem;
+  color: var(--Darkpurple);
+}
+
+.accordion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.accordion-Item {
+  width: 100%;
+  color: var(--Darkpurple);
+  font-weight: var(--FW3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questions{
+  width: 100%;
+}
+
+
+.qA {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.1px solid rgb(216, 216, 216);
+}
+
+.no-border {
+  border: none;
+  margin: 0px;
+}
+
+.qA .answer {
+  margin-bottom: 1rem;
+  color: var(--Grayishpurple);
+  font-weight: var(--FW1);
+}
+
+.accordion-Item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.bgPattern .desktop{
+  display: none;
+}
+
+.bgPattern .mobile{
+  display: block;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px){
+
+.bgPattern .mobile{
+display: none;
+}
+
+.bgPattern .desktop{
+  display: block;
+}
+
+main{
+/* transform: translate(50%); */
+right: 10rem;
+left: 10rem;
+}
+}
