@@ -59,7 +59,7 @@ main {
   background-color: var(--White);
   border-radius: 13px;
   margin: 1.5rem;
-  position: fixed;
+  position: absolute;
   top: 6rem;
   padding: 2rem;
   gap: 1rem;
@@ -157,8 +157,17 @@ display: none;
 }
 
 main{
-/* transform: translate(50%); */
 right: 10rem;
 left: 10rem;
 }
 }
+
+
+@media only screen and (min-width: 900px){
+
+main{
+right: 10rem;
+left: 20rem;
+}
+}
+
