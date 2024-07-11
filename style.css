@@ -96,9 +96,16 @@ header {
   align-items: center;
 }
 
+.accordion-Item:hover{
+  cursor: pointer;
+  color: var(--purple);
+}
+
 .questions{
   width: 100%;
 }
+
+
 
 
 .qA {
